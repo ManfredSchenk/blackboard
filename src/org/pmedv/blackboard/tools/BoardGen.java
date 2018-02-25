@@ -57,6 +57,14 @@ public class BoardGen {
 		}
 		g2.fillRect(0, 0, width, height);
 		if (type == null || !type.equals(BoardType.BLANK)) {
+			if (type != null && type.equals(BoardType.THREEPOINT_STRIPES)) {
+				g2.setColor(Colors.COPPER);
+				for (int x = RASTER; x < width; x += RASTER * 3) {
+					for (int y = RASTER / 2; y < height - RASTER / 2; y += RASTER) {
+						g2.fillRect(x - 2 - PADSIZE / 2, y + 3, 3 * RASTER - PADSIZE +4, RASTER - 5);
+					}
+				}
+			}
 			if (type != null && type.equals(BoardType.STRIPES)) {
 				g2.setColor(Colors.COPPER);
 				for (int y = RASTER / 2; y < height - RASTER / 2; y += RASTER) {

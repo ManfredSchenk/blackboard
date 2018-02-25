@@ -60,7 +60,8 @@ public class BoardEditorModel {
 		STRIPES,
 		BLANK,
 		SCHEMATICS,
-		CUSTOM
+		CUSTOM,
+		THREEPOINT_STRIPES
 	}
 	
 	private Layer currentLayer;

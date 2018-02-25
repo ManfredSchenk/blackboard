@@ -200,6 +200,9 @@ public class BoardPropertiesDialog extends AbstractNiceDialog {
 					case STRIPES:
 						renderer.setText(resources.getResourceByKey("BoardType.stripes"));
 						break;
+					case THREEPOINT_STRIPES:
+						renderer.setText(resources.getResourceByKey("BoardType.threepointstripes"));
+						break;
 					default:
 						break;
 				}
